@@ -1,0 +1,56 @@
+{
+  "name": "qq-ai-discover",
+  "version": "1.3.0",
+  "description": "IM 机器人「认主」身份闸门：把身份判断从模型手里拿走，交给代码（双因子 + 状态机 + 跨场景识别）",
+  "type": "module",
+  "bin": {
+    "qq-ai-guard-install": "./install.mjs",
+    "qq-ai-guard-doctor": "./doctor.mjs",
+    "qq-ai-guard-passphrase": "./set-passphrase.mjs",
+    "qq-ai-guard-discover-ids": "./discover-ids.mjs",
+    "qq-ai-guard-session": "./show-session.mjs"
+  },
+  "scripts": {
+    "test": "node selftest.mjs",
+    "doctor": "node doctor.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "im",
+    "qq",
+    "identity",
+    "guard",
+    "persona",
+    "llm",
+    "prompt-injection"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "files": [
+    "guard.mjs",
+    "config.example.json",
+    "persona-block.example.txt",
+    "install.mjs",
+    "apply-guard-patch.mjs",
+    "migrate-persona.mjs",
+    "selftest.mjs",
+    "doctor.mjs",
+    "set-passphrase.mjs",
+    "discover-ids.mjs",
+    "show-session.mjs",
+    "adapters",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bxfjjb/qq-ai-discover.git"
+  },
+  "homepage": "https://github.com/Bxfjjb/qq-ai-discover#readme",
+  "bugs": {
+    "url": "https://github.com/Bxfjjb/qq-ai-discover/issues"
+  }
+}

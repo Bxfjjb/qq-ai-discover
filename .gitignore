@@ -1,0 +1,16 @@
+# 运行期产物 —— 绝对不能提交
+state.json
+attempts.jsonl
+attempts.jsonl.1
+pairings.json
+*.bak
+*.bak-*
+.youzi-guard.bak
+config.json
+passphrase.sha256
+.env
+
+# 本地验证残留
+sandbox/
+selftest-*/
+node_modules/
